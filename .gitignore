@@ -17,3 +17,5 @@ build/
 # IDE
 .vscode/
 .idea/
+public/assets/*.mp4
+dist/
