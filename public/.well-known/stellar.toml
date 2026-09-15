@@ -20,17 +20,18 @@ ORG_GITHUB              = "https://github.com/weupdaters/elaracoin"
 # TOKEN DEFINITION (Mainnet)
 # ============================================================
 [[CURRENCIES]]
-code                      = "ELARA"
-issuer                    = "GB3WVZRQB2MXRFD4J3JV3OZH5K6V7WPKIKVMONOKXN3QV2QTVHNMAGVG"
-name                      = "Elara"
-desc                      = "ELARA - 100 Billion total fixed supply. 25% Presale (25B ELARA). 75% Daily Rewards Pool. Issuer permanently locked - no new tokens can ever be minted."
-display_decimals          = 7
-fixed_number              = 100000000000
-max_number                = 100000000000
+code                       = "ELARA"
+issuer                     = "GB3WVZRQB2MXRFD4J3JV3OZH5K6V7WPKIKVMONOKXN3QV2QTVHNMAGVG"
+contract                   = "CC3L52VC3KKEH3QFH7546POCEXDP72QLDSQHQCLTLOAQLUDB4XZUCBPJ"
+name                       = "Elara"
+desc                       = "ELARA - 100 Billion total fixed supply. 25% Presale. 75% Daily Rewards. Issuer permanently locked."
+display_decimals           = 7
+fixed_number               = 100000000000
+max_number                 = 100000000000
 is_asset_minting_completed = true
-image                     = "https://elaracoin.online/assets/logo.png"
-status                    = "live"
-anchor_asset_type         = "other"
+image                      = "https://elaracoin.online/assets/logo.png"
+status                     = "live"
+anchor_asset_type          = "other"
 
 # ============================================================
 # OFFICIAL ACCOUNTS
