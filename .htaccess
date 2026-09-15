@@ -1,8 +1,9 @@
-# Allow CORS for stellar.toml so StellarExpert and wallets can read metadata
-<IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "*"
-</IfModule>
+# CORS for stellar.toml (required by Stellar protocol)
+<FilesMatch "stellar\.toml$">
+  Header set Access-Control-Allow-Origin "*"
+  Header set Content-Type "text/plain"
+</FilesMatch>
 
-<Files "stellar.toml">
-    ForceType text/plain
-</Files>
+<IfModule mod_headers.c>
+  Header always set Access-Control-Allow-Origin "*"
+</IfModule>
