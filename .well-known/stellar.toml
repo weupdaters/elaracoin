@@ -14,7 +14,7 @@ ORG_OFFICIAL_EMAIL      = "contact@elaracoin.online"
 ORG_SUPPORT_EMAIL       = "contact@elaracoin.online"
 ORG_TWITTER             = "elaraofficialhq"
 ORG_TELEGRAM            = "https://t.me/ElaraOfficialHQ"
-ORG_GITHUB              = "https://github.com/weupdaters/elaracoin"
+
 
 # ============================================================
 # TOKEN DEFINITION (Mainnet)
