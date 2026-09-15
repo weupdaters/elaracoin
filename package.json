@@ -1,0 +1,38 @@
+{
+  "name": "elara-soroban-token",
+  "version": "1.0.0",
+  "description": "Elara (ELARA) Token on Stellar and Soroban SAC",
+  "main": "run_all.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "setup": "node 01_setup_accounts.js",
+    "mint": "node 02_mint_and_distribute.js",
+    "deploy-sac": "node 03_deploy_sac.js",
+    "lock-issuer": "node 04_lock_issuer.js",
+    "status": "node check_status.js",
+    "rewards": "node 06_daily_rewards_distributor.js",
+    "frontend": "npx serve frontend -p 3000",
+    "all": "node run_all.js"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^17.0.1",
+    "dotenv": "^16.4.7",
+    "framer-motion": "^12.43.0",
+    "lucide-react": "^0.344.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.5.5",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  }
+}

@@ -1,0 +1,49 @@
+# Stellar.toml for Elara (ELARA)
+# Standard: SEP-0001 (https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0001.md)
+
+# --- Organization Information ---
+# Loaded directly by StellarExpert under the "Organization" tab
+[DOCUMENTATION]
+ORG_NAME = "Elara"
+ORG_DBA = "Elara Token"
+ORG_URL = "https://elaracoin.online"
+ORG_LOGO = "https://elaracoin.online/assets/logo.png"
+ORG_DESCRIPTION = "Elara is a next-generation token on Stellar and Soroban featuring 0.25% daily rewards to all holders, a 25% presale allocation, and full Soroban smart contract interoperability."
+ORG_OFFICIAL_EMAIL = "contact@elerea.com"
+ORG_SUPPORT_EMAIL = "contact@elerea.com"
+ORG_TWITTER = "elara_token"
+ORG_TELEGRAM = "https://t.me/elaratoken"
+
+# --- Token Definition ---
+[[CURRENCIES]]
+code = "ELARA"
+issuer = "GCXS3E6W2UGTBKUXINHK4CI7J4OHNZEL4IGNUILMEOBGRAEONVJ5WZF6"
+contract = "CBFLQJDLMXI2LVDCDHBKNZJDAW5KMDOQN2WVAQ3TGGW6XQCHGUKGDVSR"
+name = "Elara"
+desc = "Elara (ELARA) - 100 Billion locked supply. 25% Presale allocation (25000000000 ELARA). Features 0.25% daily rewards to every token holder."
+display_decimals = 7
+fixed_number = 100000000000
+max_number = 100000000000
+is_asset_minting_completed = true
+image = "https://elaracoin.online/assets/logo.png"
+status = "live"
+anchor_asset_type = "other"
+
+# --- Official Verified Accounts (Tagged on StellarExpert) ---
+[[ACCOUNTS]]
+public_key = "GCXS3E6W2UGTBKUXINHK4CI7J4OHNZEL4IGNUILMEOBGRAEONVJ5WZF6"
+desc = "Elara Issuer Account (Locked - Master Key Weight 0)"
+
+[[ACCOUNTS]]
+public_key = "GCYTX2XZO6K2OK6GYXKUBOPRTPOP27DCSBOTP7YZCHDNA5EZN6SZVAHU"
+desc = "Elara 25% Presale Pool (25,000,000,000 ELARA)"
+
+[[ACCOUNTS]]
+public_key = "GCKDAEMMRZ3EARU7Q4DOMSOC4E3JZASFVWVJGUNXKFU6SMA7F4SFGX6L"
+desc = "Elara 75% Daily Rewards Pool (75,000,000,000 ELARA - 0.25% daily rewards to holders)"
+
+
+# --- Project Principals ---
+[PRINCIPALS]
+name = "Elara Core Team"
+email = "contact@elerea.com"

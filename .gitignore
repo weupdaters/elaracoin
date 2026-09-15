@@ -1,0 +1,19 @@
+# === SECURITY: Secret Keys - NEVER commit to git ===
+keys.json
+.env
+*.env
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Build output
+dist/
+build/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

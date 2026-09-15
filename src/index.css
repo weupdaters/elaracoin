@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Space Mono", monospace;
+  --font-serif: "Space Mono", monospace;
+  --font-mono: "Space Mono", monospace;
+
+  /* ELARA color direction */
+  --electric-blue: #168BFF;
+  --deep-space-navy: #06152F;
+  --dark-navy: #030B17;
+  --metallic-silver: #C0C7D6;
+  --silver-light: #E2E8F0;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #06152F;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(22, 139, 255, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 90% 80%, rgba(22, 139, 255, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, #06152F 0%, #030B17 100%);
+  color: #FFFFFF;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Space Mono", monospace;
+}
+
+/* Metallic silver text gradient utility */
+.text-metallic-silver {
+  background: linear-gradient(135deg, #FFFFFF 0%, #C0C7D6 50%, #8A99AD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Electric blue glow utilities */
+.glow-electric {
+  box-shadow: 0 0 25px rgba(22, 139, 255, 0.35);
+}
+
+.text-glow-electric {
+  text-shadow: 0 0 15px rgba(22, 139, 255, 0.6);
+}
+
+/* Lenis smooth scroll utility classes */
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Watermark Anton SC font helper */
+.font-anton {
+  font-family: "Anton SC", sans-serif;
+}

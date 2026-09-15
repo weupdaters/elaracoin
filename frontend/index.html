@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elara (ELARA) - Soroban & Stellar Utility Token</title>
+  <meta name="description" content="Elara is a next-generation token on Stellar and Soroban featuring 100B locked supply and 0.25% daily rewards to token holders." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/elara-logo.svg" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="brand">
+        <img src="assets/elara-logo.svg" alt="Elara Logo" class="brand-logo" />
+        <span class="brand-name">ELARA</span>
+      </a>
+
+      <div class="nav-actions">
+        <div class="badge-network">
+          <span class="status-dot"></span>
+          <span>Stellar Testnet</span>
+        </div>
+        <button id="btn-connect" class="btn btn-primary">Connect Wallet</button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-pill">
+        <span>⚡ Built on Soroban Smart Contracts</span>
+      </div>
+      <h1 class="hero-title">
+        The Next Generation <br />
+        <span class="gradient-text">Soroban & Stellar Token</span>
+      </h1>
+      <p class="hero-subtitle">
+        100 Billion fixed & locked supply. Earning 0.25% daily rewards directly into your wallet with seamless Soroban smart contract interoperability.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#presale" class="btn btn-primary">Join 25% Presale</a>
+        <a href="https://stellar.expert/explorer/testnet/asset/ELARA-GCXS3E6W2UGTBKUXINHK4CI7J4OHNZEL4IGNUILMEOBGRAEONVJ5WZF6" target="_blank" rel="noopener" class="btn btn-secondary">
+          View on StellarExpert ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Live Metrics Grid -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-header">
+          <span>Total Supply</span>
+          <span class="badge-locked">🔒 LOCKED</span>
+        </div>
+        <div class="stat-value">100 Billion</div>
+        <div class="stat-desc">Permanently capped on-chain. Zero new minting.</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span>Daily Rewards</span>
+          <span class="highlight-green">0.25% Daily</span>
+        </div>
+        <div class="stat-value">91.25% APY</div>
+        <div class="stat-desc">Distributed automatically to every token holder.</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span>Presale Allocation</span>
+          <span class="highlight-cyan">25% Reserved</span>
+        </div>
+        <div class="stat-value">25 Billion</div>
+        <div class="stat-desc">25,000,000,000 ELARA in dedicated presale pool.</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span>Soroban Layer</span>
+          <span class="highlight-cyan">Protocol 20+</span>
+        </div>
+        <div class="stat-value">Active SAC</div>
+        <div class="stat-desc">Stellar Asset Contract wrapper live on Soroban.</div>
+      </div>
+    </section>
+
+    <!-- Two Column Interactive Panels: Presale & Rewards Calculator -->
+    <section class="interactive-grid">
+      
+      <!-- Presale Panel -->
+      <div class="card-panel" id="presale">
+        <div class="panel-header">
+          <h2 class="panel-title">Elara Presale (25%)</h2>
+          <p class="panel-subtitle">Acquire ELARA tokens at the initial early-backer presale rate.</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="presale-xlm">You Contribute (XLM)</label>
+          <div class="input-box">
+            <input type="number" id="presale-xlm" value="100" min="1" step="any" placeholder="0.00" />
+            <span class="input-suffix">XLM</span>
+          </div>
+        </div>
+
+        <div class="exchange-arrow">↓</div>
+
+        <div class="form-group">
+          <label class="form-label">You Receive (ELARA)</label>
+          <div class="input-box">
+            <input type="text" id="presale-elara" value="250,000" readonly />
+            <span class="input-suffix">ELARA</span>
+          </div>
+        </div>
+
+        <div class="calc-breakdown">
+          <div class="breakdown-row">
+            <span class="breakdown-label">Rate</span>
+            <span class="breakdown-val">1 XLM = 2,500 ELARA</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Presale Pool</span>
+            <span class="breakdown-val">25,000,000,000 ELARA</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Your Balance</span>
+            <span class="breakdown-val highlight-cyan" id="user-elara-balance">0 ELARA</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Official Presale Deposit Address</label>
+          <div class="address-card">
+            <span class="address-text">GCYTX2XZO6K2OK6GYXKUBOPRTPOP27DCSBOTP7YZCHDNA5EZN6SZVAHU</span>
+            <button class="btn-copy" data-copy="GCYTX2XZO6K2OK6GYXKUBOPRTPOP27DCSBOTP7YZCHDNA5EZN6SZVAHU">Copy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rewards Calculator Panel -->
+      <div class="card-panel">
+        <div class="panel-header">
+          <h2 class="panel-title">0.25% Daily Reward Calculator</h2>
+          <p class="panel-subtitle">Calculate your automated holder rewards paid from the 75B pool.</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="reward-holdings">Your ELARA Holdings</label>
+          <div class="input-box">
+            <input type="number" id="reward-holdings" value="1000000" min="1" step="any" placeholder="1000000" />
+            <span class="input-suffix">ELARA</span>
+          </div>
+        </div>
+
+        <div class="calc-breakdown" style="margin-top: 2rem;">
+          <div class="breakdown-row">
+            <span class="breakdown-label">Daily Reward (0.25%)</span>
+            <span class="breakdown-val highlight-green" id="calc-daily">2,500.00 ELARA</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Monthly Estimate (30 Days)</span>
+            <span class="breakdown-val" id="calc-monthly">75,000.00 ELARA</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="breakdown-label">Yearly Estimate (365 Days)</span>
+            <span class="breakdown-val highlight-cyan" id="calc-yearly">912,500.00 ELARA</span>
+          </div>
+        </div>
+
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: auto;">
+          Rewards are distributed daily to all active token holders directly from the dedicated 75,000,000,000 ELARA rewards pool.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- Smart Contract Transparency Section -->
+    <section class="transparency-section">
+      <div class="transparency-header">
+        <h2 class="transparency-title">On-Chain Transparency & Contracts</h2>
+        <p class="panel-subtitle">Verify the contracts and token architecture directly on the public ledger.</p>
+      </div>
+
+      <div class="contract-grid">
+        <!-- Soroban Contract -->
+        <div class="contract-item">
+          <div class="contract-item-label">Soroban Smart Contract ID (SAC)</div>
+          <div class="contract-val-wrapper">
+            <span class="address-text">CBFLQJDLMXI2LVDCDHBKNZJDAW5KMDOQN2WVAQ3TGGW6XQCHGUKGDVSR</span>
+            <button class="btn-copy" data-copy="CBFLQJDLMXI2LVDCDHBKNZJDAW5KMDOQN2WVAQ3TGGW6XQCHGUKGDVSR">Copy</button>
+          </div>
+          <a href="https://stellar.expert/explorer/testnet/contract/CBFLQJDLMXI2LVDCDHBKNZJDAW5KMDOQN2WVAQ3TGGW6XQCHGUKGDVSR" target="_blank" rel="noopener" style="display:inline-block; margin-top: 0.5rem; font-size: 0.8rem; color: var(--accent-cyan);">
+            Open in Soroban Explorer ↗
+          </a>
+        </div>
+
+        <!-- Issuer Address -->
+        <div class="contract-item">
+          <div class="contract-item-label">Issuer Account (Locked - Master Weight 0)</div>
+          <div class="contract-val-wrapper">
+            <span class="address-text">GCXS3E6W2UGTBKUXINHK4CI7J4OHNZEL4IGNUILMEOBGRAEONVJ5WZF6</span>
+            <button class="btn-copy" data-copy="GCXS3E6W2UGTBKUXINHK4CI7J4OHNZEL4IGNUILMEOBGRAEONVJ5WZF6">Copy</button>
+          </div>
+          <a href="https://stellar.expert/explorer/testnet/account/GCXS3E6W2UGTBKUXINHK4CI7J4OHNZEL4IGNUILMEOBGRAEONVJ5WZF6" target="_blank" rel="noopener" style="display:inline-block; margin-top: 0.5rem; font-size: 0.8rem; color: var(--accent-cyan);">
+            Open Issuer on StellarExpert ↗
+          </a>
+        </div>
+
+        <!-- Presale Wallet -->
+        <div class="contract-item">
+          <div class="contract-item-label">Presale Pool (25,000,000,000 ELARA)</div>
+          <div class="contract-val-wrapper">
+            <span class="address-text">GCYTX2XZO6K2OK6GYXKUBOPRTPOP27DCSBOTP7YZCHDNA5EZN6SZVAHU</span>
+            <button class="btn-copy" data-copy="GCYTX2XZO6K2OK6GYXKUBOPRTPOP27DCSBOTP7YZCHDNA5EZN6SZVAHU">Copy</button>
+          </div>
+          <a href="https://stellar.expert/explorer/testnet/account/GCYTX2XZO6K2OK6GYXKUBOPRTPOP27DCSBOTP7YZCHDNA5EZN6SZVAHU" target="_blank" rel="noopener" style="display:inline-block; margin-top: 0.5rem; font-size: 0.8rem; color: var(--accent-cyan);">
+            View Presale Pool Balance ↗
+          </a>
+        </div>
+
+        <!-- Rewards Wallet -->
+        <div class="contract-item">
+          <div class="contract-item-label">Daily Rewards Pool (75,000,000,000 ELARA)</div>
+          <div class="contract-val-wrapper">
+            <span class="address-text">GCKDAEMMRZ3EARU7Q4DOMSOC4E3JZASFVWVJGUNXKFU6SMA7F4SFGX6L</span>
+            <button class="btn-copy" data-copy="GCKDAEMMRZ3EARU7Q4DOMSOC4E3JZASFVWVJGUNXKFU6SMA7F4SFGX6L">Copy</button>
+          </div>
+          <a href="https://stellar.expert/explorer/testnet/account/GCKDAEMMRZ3EARU7Q4DOMSOC4E3JZASFVWVJGUNXKFU6SMA7F4SFGX6L" target="_blank" rel="noopener" style="display:inline-block; margin-top: 0.5rem; font-size: 0.8rem; color: var(--accent-cyan);">
+            View Rewards Pool Balance ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        <span>© 2026 Elara Token. All rights reserved.</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://t.me/elaratoken" target="_blank" rel="noopener" class="footer-link">Telegram</a>
+        <a href="https://twitter.com/elara_token" target="_blank" rel="noopener" class="footer-link">Twitter</a>
+        <a href="mailto:contact@elerea.com" class="footer-link">Email</a>
+        <a href="/elerea/.well-known/stellar.toml" target="_blank" class="footer-link">stellar.toml (SEP-0001)</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
