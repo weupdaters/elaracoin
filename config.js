@@ -5,11 +5,11 @@ require('dotenv').config();
 
 module.exports = {
   network: {
-    name: 'testnet',
-    networkPassphrase: 'Test SDF Network ; September 2015',
-    horizonUrl: 'https://horizon-testnet.stellar.org',
-    sorobanRpcUrl: 'https://soroban-testnet.stellar.org',
-    friendbotUrl: 'https://friendbot.stellar.org',
+    name: 'public',
+    networkPassphrase: 'Public Global Stellar Network ; September 2015',
+    horizonUrl: 'https://horizon.stellar.org',
+    sorobanRpcUrl: 'https://soroban-rpc.mainnet.stellar.org',
+    friendbotUrl: null, // No Friendbot on Mainnet
   },
   token: {
     name: 'Elara',
