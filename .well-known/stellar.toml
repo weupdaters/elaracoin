@@ -1,52 +1,30 @@
-# ============================================================
-# Stellar.toml for ELARA Token
-# Standard: SEP-0001
-# Domain: elaracoin.online
-# ============================================================
+# Project Elara <elaracoin.online>
+VERSION = "2.0.0"
+NETWORK_PASSPHRASE = "Public Global Stellar Network ; September 2015"
 
 [DOCUMENTATION]
-ORG_NAME                = "Elara"
-ORG_DBA                 = "Elara Token"
-ORG_URL                 = "https://elaracoin.online"
-ORG_LOGO                = "https://elaracoin.online/assets/logo.png"
-ORG_DESCRIPTION         = "Elara (ELARA) is a next-generation token on Stellar Mainnet featuring 100 Billion fixed supply, 25% presale allocation, and 0.25% daily rewards to all token holders."
-ORG_OFFICIAL_EMAIL      = "contact@elaracoin.online"
-ORG_SUPPORT_EMAIL       = "contact@elaracoin.online"
-ORG_TWITTER             = "elaraofficialhq"
-ORG_TELEGRAM            = "https://t.me/ElaraOfficialHQ"
+ORG_NAME = "Elara"
+ORG_DBA = "Elara Token"
+ORG_URL = "https://elaracoin.online"
+ORG_LOGO = "https://elaracoin.online/assets/logo.png"
+ORG_OFFICIAL_EMAIL = "contact@elaracoin.online"
+ORG_SUPPORT_EMAIL = "contact@elaracoin.online"
+ORG_TWITTER = "elaraofficialhq"
+ORG_TELEGRAM = "https://t.me/ElaraOfficialHQ"
+ORG_GITHUB = "https://github.com/weupdaters/elaracoin"
+ORG_DESCRIPTION = "Elara (ELARA) is a next-generation token on Stellar Mainnet featuring 100 Billion fixed supply, 25% presale allocation, and 0.25% daily rewards to all token holders."
 
-
-# ============================================================
-# TOKEN DEFINITION (Mainnet)
-# ============================================================
 [[CURRENCIES]]
-code                       = "ELARA"
-issuer                     = "GB3WVZRQB2MXRFD4J3JV3OZH5K6V7WPKIKVMONOKXN3QV2QTVHNMAGVG"
-contract                   = "CC3L52VC3KKEH3QFH7546POCEXDP72QLDSQHQCLTLOAQLUDB4XZUCBPJ"
-name                       = "Elara"
-desc                       = "ELARA - 100 Billion total fixed supply. 25% Presale. 75% Daily Rewards. Issuer permanently locked."
-display_decimals           = 7
-fixed_number               = 100000000000
-max_number                 = 100000000000
-is_asset_minting_completed = true
-image                      = "https://elaracoin.online/assets/logo.png"
-status                     = "live"
-anchor_asset_type          = "other"
+code = "ELARA"
+name = "Elara"
+issuer = "GB3WVZRQB2MXRFD4J3JV3OZH5K6V7WPKIKVMONOKXN3QV2QTVHNMAGVG"
+contract = "CC3L52VC3KKEH3QFH7546POCEXDP72QLDSQHQCLTLOAQLUDB4XZUCBPJ"
+is_asset_anchored = false
+display_decimals = 7
+desc = "ELARA - 100 Billion total fixed supply. 25% Presale. 75% Daily Rewards. Issuer permanently locked - no new tokens can ever be minted."
+image = "https://elaracoin.online/assets/logo.png"
+conditions = "There will only ever be 100 billion ELARA tokens in existence. Issuer account is permanently locked."
 
-# ============================================================
-# OFFICIAL ACCOUNTS
-# ============================================================
-[[ACCOUNTS]]
-public_key = "GB3WVZRQB2MXRFD4J3JV3OZH5K6V7WPKIKVMONOKXN3QV2QTVHNMAGVG"
-desc       = "ELARA Issuer Account - Permanently Locked (Master Key Weight = 0)"
-
-[[ACCOUNTS]]
-public_key = "GC4ZGLPRXB4WAHPNAJOLRD2DSCMBK4OJL5KXNIHCYMPDJICPPGWK2O3D"
-desc       = "ELARA Distributor - Holds 100,000,000,000 ELARA"
-
-# ============================================================
-# TEAM / PRINCIPALS
-# ============================================================
-[[PRINCIPALS]]
-name  = "Elara Core Team"
+[PRINCIPALS]
+name = "Elara Core Team"
 email = "contact@elaracoin.online"
