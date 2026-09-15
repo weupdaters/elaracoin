@@ -1,0 +1,21 @@
+# Allow .well-known folder to be served directly
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Serve .well-known directly - bypass React app
+  RewriteRule ^\.well-known/ - [L]
+
+  # Serve static assets directly
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # All other routes go to React app
+  RewriteRule ^ /index.html [L]
+</IfModule>
+
+# CORS for stellar.toml
+<Files "stellar.toml">
+  Header set Access-Control-Allow-Origin "*"
+  Header set Content-Type "text/plain; charset=utf-8"
+</Files>

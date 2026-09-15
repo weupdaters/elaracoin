@@ -6,20 +6,15 @@ keys.json
 # Node
 node_modules/
 npm-debug.log*
-
-# Build output
-dist/
-build/
+yarn-debug.log*
+yarn-error.log*
 
 # macOS
 .DS_Store
+.AppleDouble
+.LSOverride
 
 # IDE
 .vscode/
 .idea/
-
-dist/
-
-# Allow logo
-!assets/logo.png
-!public/assets/elara-logo.png
+*.suo
