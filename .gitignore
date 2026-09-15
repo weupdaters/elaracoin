@@ -17,5 +17,9 @@ build/
 # IDE
 .vscode/
 .idea/
-public/assets/*.mp4
+
 dist/
+
+# Allow logo
+!assets/logo.png
+!public/assets/elara-logo.png
