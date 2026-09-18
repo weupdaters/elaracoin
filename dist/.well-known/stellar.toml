@@ -2,7 +2,6 @@
 VERSION = "2.0.0"
 NETWORK_PASSPHRASE = "Public Global Stellar Network ; September 2015"
 
-# Official accounts belonging to this organization (Required by SEP-0001 for domain confirmation)
 ACCOUNTS = [
   "GB3WVZRQB2MXRFD4J3JV3OZH5K6V7WPKIKVMONOKXN3QV2QTVHNMAGVG",
   "GC4ZGLPRXB4WAHPNAJOLRD2DSCMBK4OJL5KXNIHCYMPDJICPPGWK2O3D"
@@ -17,14 +16,12 @@ ORG_OFFICIAL_EMAIL = "contact@elaracoin.online"
 ORG_SUPPORT_EMAIL = "contact@elaracoin.online"
 ORG_TWITTER = "elaraofficialhq"
 ORG_TELEGRAM = "https://t.me/ElaraOfficialHQ"
-ORG_GITHUB = "https://github.com/weupdaters/elaracoin"
 ORG_DESCRIPTION = "Elara (ELARA) is a next-generation token on Stellar Mainnet featuring 100 Billion fixed supply, 25% presale allocation, and 0.25% daily rewards to all token holders."
 
 [[CURRENCIES]]
 code = "ELARA"
 name = "Elara"
 issuer = "GB3WVZRQB2MXRFD4J3JV3OZH5K6V7WPKIKVMONOKXN3QV2QTVHNMAGVG"
-contract = "CC3L52VC3KKEH3QFH7546POCEXDP72QLDSQHQCLTLOAQLUDB4XZUCBPJ"
 is_asset_anchored = false
 display_decimals = 7
 desc = "ELARA - 100 Billion total fixed supply. 25% Presale. 75% Daily Rewards. Issuer permanently locked - no new tokens can ever be minted."
