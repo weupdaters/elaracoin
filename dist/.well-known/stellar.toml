@@ -1,6 +1,7 @@
 # Project Elara <elaracoin.online>
 VERSION = "2.0.0"
 NETWORK_PASSPHRASE = "Public Global Stellar Network ; September 2015"
+HORIZON_URL = "https://horizon.stellar.org"
 
 ACCOUNTS = [
   "GB3WVZRQB2MXRFD4J3JV3OZH5K6V7WPKIKVMONOKXN3QV2QTVHNMAGVG",
@@ -22,8 +23,10 @@ ORG_DESCRIPTION = "Elara (ELARA) is a next-generation token on Stellar Mainnet f
 code = "ELARA"
 name = "Elara"
 issuer = "GB3WVZRQB2MXRFD4J3JV3OZH5K6V7WPKIKVMONOKXN3QV2QTVHNMAGVG"
-is_asset_anchored = false
+status = "live"
 display_decimals = 7
+fixed_number = 100000000000
+is_asset_anchored = false
 desc = "ELARA - 100 Billion total fixed supply. 25% Presale. 75% Daily Rewards. Issuer permanently locked - no new tokens can ever be minted."
 image = "https://elaracoin.online/assets/logo.png"
 conditions = "There will only ever be 100 billion ELARA tokens in existence. Issuer account is permanently locked."
