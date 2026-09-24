@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import NanoBanner from './components/NanoBanner';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import CinematicSection from './components/CinematicSection';
@@ -24,28 +25,31 @@ export const App: React.FC = () => {
       className="bg-[#06152F] text-white min-h-screen selection:bg-[#168BFF] selection:text-white overflow-x-hidden"
       style={{ fontFamily: '"Space Mono", monospace' }}
     >
-      {/* Fixed Navbar with ELARA Logo and Section Links */}
-      <Navbar entranceComplete={entranceComplete} />
+      {/* Top Fixed Header with Nano Announcement Banner & Navbar */}
+      <div className="fixed top-0 left-0 w-full z-40 flex flex-col pointer-events-none">
+        <NanoBanner />
+        <Navbar entranceComplete={entranceComplete} />
+      </div>
 
       {/* Main Content: Exact 5 Original Sections */}
       <main>
-        {/* Section 1: Hero Section with Mouse-Scrubbed Video / Cyber Character */}
+        {/* Section 1: Hero Section with Cyber Character and Parallax */}
         <HeroSection entranceComplete={entranceComplete} />
 
-        {/* Section 2: Cinematic 3D Perspective Section (What Is ELARA?) */}
+        {/* Section 2: Cinematic Section (What Is ELARA?) */}
         <CinematicSection />
 
         {/* Section 3: Performance & Tokenomics Metrics (100B Locked, 0.25% Daily, 25% Presale) */}
         <MetricsSection />
 
-        {/* Section 4: Technology & Solution (The Problem & Solution 4-Column Grid) */}
+        {/* Section 4: Technology & Solution (The Problem & Solution 4-Column Cyber Grid) */}
         <TechnologySection />
 
         {/* Section 5: Architecture (Vision & Mission 3 Pillars) */}
         <ArchitectureSection />
       </main>
 
-      {/* Footer: Exact 2-Column Layout with Video #5 and Community Links */}
+      {/* Footer: 2-Column Layout with Nano Banana Orbital Station and Community Links */}
       <Footer />
     </div>
   );
