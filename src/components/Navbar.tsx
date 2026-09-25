@@ -146,6 +146,17 @@ export const Navbar: React.FC<NavbarProps> = ({ entranceComplete }) => {
                   >
                     <ScrambleText text="Vision" isHovered={hoveredLink === 'vision'} />
                   </button>
+
+                  <a
+                    href="/whitepaper.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[13px] sm:text-[14px] font-mono text-[#C0C7D6] hover:text-[#168BFF] cursor-pointer bg-transparent border-none p-0 transition-colors no-underline"
+                    onMouseEnter={() => setHoveredLink('whitepaper')}
+                    onMouseLeave={() => setHoveredLink(null)}
+                  >
+                    <ScrambleText text="Whitepaper" isHovered={hoveredLink === 'whitepaper'} />
+                  </a>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -304,6 +315,20 @@ export const Navbar: React.FC<NavbarProps> = ({ entranceComplete }) => {
                 </div>
                 <i className="bi bi-chevron-right text-xs text-[#00D2FF]" />
               </button>
+
+              <a
+                href="/whitepaper.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-3.5 rounded-xl bg-[#06152F]/70 border border-[#168BFF]/25 text-left text-white font-mono text-sm hover:border-[#168BFF] hover:bg-[#168BFF]/15 transition-all cursor-pointer no-underline"
+                onClick={() => setMenuOpen(false)}
+              >
+                <div className="flex items-center gap-3">
+                  <i className="bi bi-file-earmark-text text-[#168BFF]" />
+                  <span>Whitepaper</span>
+                </div>
+                <i className="bi bi-chevron-right text-xs text-[#00D2FF]" />
+              </a>
             </div>
 
             {/* Mobile Drawer Bottom Actions */}
