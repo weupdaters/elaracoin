@@ -14,8 +14,11 @@
   RewriteRule ^ /index.html [L]
 </IfModule>
 
-# CORS for stellar.toml
+# CORS and Cache-Control for stellar.toml
 <Files "stellar.toml">
   Header set Access-Control-Allow-Origin "*"
   Header set Content-Type "text/plain; charset=utf-8"
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires 0
 </Files>
